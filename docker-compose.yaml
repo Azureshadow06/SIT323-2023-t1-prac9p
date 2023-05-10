@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  web:
+    image: yhxiao/book-web-app:latest
+    build: .
+    command: "node app.js"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data:/data/db

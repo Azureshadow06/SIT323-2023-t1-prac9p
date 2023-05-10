@@ -1,0 +1,24 @@
+{
+  "name": "book-node-app",
+  "version": "1.0.0",
+  "description": "My Node.js application",
+  "author": "First Last <first.last@example.com",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^4.2.2",
+    "nodemon": "^2.0.22"
+  }
+}
+
+    
+    
+    
+    
+    
+    
+  
+
